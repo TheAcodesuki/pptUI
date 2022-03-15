@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+ font-family: 'Montserrat', sans-serif;
+ text-align: center;
+ background: white;
+ user-select: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+p {
+  color: #f5f4e8;
+}
+
+
+/* Navigation Bar */
+
+.navbg{
+  background-color: #CF102D;
+  align-items: center;
+}
+.navbar2{
+  background-color: #CF102D;
+  margin: 0;
+  padding: 0;
+}
+
+.navhead{
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  margin-right: 20px;
+}
+
+#sectag{
+  line-height: 2px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.navtable{
+  border-collapse: separate;
+  border-spacing: 40px;
+  *border-collapse: expression('separate', cellSpacing='40px');
+}
+
+.navrow1{
+  border-right: 80px;
+}
+
+.navsec{
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.navcap{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+a {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 5px
+     );
+background-repeat: repeat-x;
+background-size: 100%;
+  color: #000;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
+}
+
+:root {
+  --mainColor: #ff9800;
+}
+
+/* carousel */
+#video-carousel-example{
+  margin: 0;
+}
+
+.btncar{
+  background-color: #CF102D;
+  border-radius: 20px;
+}
+
+.carcap{
+  color: white;
+}
+
+/* features-section */
+
+[type=radio] {
+  display: none;
+}
+
+#slider {
+  height: 35vw;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  padding: 30px 100px 50px 100px;
+  margin: 20px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#slider label {
+  margin: auto;
+  width: 70%;
+  height: 90%;
+  border-radius: 4px;
+  position: absolute;
+  left: 0; right: 0;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+
+}
+
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-30%,0,-200px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-15%,0,-100px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(15%,0,-100px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(30%,0,-200px);
+}
+
+.sliderbtn{
+  background-color: #CF102D;
+  border-radius: 20px;
+
+}
+
+.slidercap{
+  color: white;
+}
+/* streams-section */
+
+#streams {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color:#CF102D;
+  padding: 50px;
+}
+
+
+.container{
+  padding: 0 ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card{
+  height: 280px;
+  max-width: 350px;
+  margin: 20px 20px;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.card .img{
+  height:270px;
+}
+.card:hover{
+  height: 400px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.card .img{
+  height: 270px;
+  width: 100%;
+}
+.card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .top-text{
+  padding-top: 5px;
+  background-color: white;
+}
+.card .top-text .name{
+  font-size: 25px;
+  font-weight: 600;
+  color: #CF102D;
+}
+
+.card .bottom-text{
+  padding: 0 10px 0 10px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+.card:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text{
+  text-align: center;
+}
+.card .bottom-text .btn{
+  margin: 0 0;
+  text-align: left;
+}
+.card .bottom-text .btn a{
+  text-decoration: none;
+  background:#CF102D;
+  color: #f2f2f2;
+  padding: 8px 20px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+.card .bottom-text .btn a:hover{
+  transform: scale(0.9);
+}
+@media screen and (max-width: 978px) {
+  .container{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card{
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+
+
+/* Courses Comparision */
+
+#coursesComp {
+  align-items: center;
+  display: flex;
+  min-height: 90vh;
+  justify-content: center;
+}
+
+#coursesComp .card-grid{
+  display: inline-flex;
+  grid-column-gap: 40px;
+}
+
+#coursesComp .card{
+  position: relative;
+  width: 300px;
+  height: 450px;
+  transition: 0.8s ease-in-out;
+  border-radius: 20px;
+  background-image: linear-gradient(15deg, #0f4667 0% , #2a6973 150%);
+}
+
+#coursesComp .card:hover{
+  box-shadow: 2px 30px 30px rgba(0,0,0,0.5);
+}
+
+#coursesComp .card-background{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear , transform 200ms linear;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+}
+#coursesComp .card-content{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 24px;
+}
+
+#coursesComp .card-heading{
+  color: #fff;
+  font-size: 1.9rem;
+  line-height: 1.4;
+  width: 80%;
+}
+
+#coursesComp .card-category{
+  position: absolute;
+  left: 35%;
+  top: 14em;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#coursesComp .card:hover .card-background{
+  transform: scale(1.05) translateZ(0);
+}
+
+#coursesComp .card-grid:hover > .card:not(:hover) , .card-content:not(:hover) .card-background{
+  filter: brightness(0.8) saturate(1) contrast(1.2) blur(10px);
+}
+
+#coursesComp .cchead{
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
+#coursesComp .cccap{
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
+
+
+
+
+.secheader{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-weight: bolder;
+}
+
+
+.parallax1{
+	widows: 100%;
+	height: 650px;
+	background-image: url(images/uny2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+.parallax1 h1{
+	color: white;
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.content2 h1{
+	font-family: monospace;
+	font-size: 40px;
+	border-bottom: 3px solid orange;
+	width: 66%;
+  color: white;
+}
+
+.content2 {
+	width: 40%;
+	font-size: 21px;
+	padding: 20px;
+	text-align: justify;
+	margin-top: 100px;
+  background-color: #CF102D;
+
+}
+
+.parallax2{
+	float: right;
+	width: 57%;
+	height: 420px;
+	margin-top: -420px;
+	background-image: url(images/unysmall.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.parallax3{
+	width: 50%;
+	height: 420px;
+	background-image: url(images/oc2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin-top: 120px;
+}
+
+.content3{
+	margin-top: -460px;
+	width: 47%;
+	font-size: 18px;
+	padding: 20px;
+	letter-spacing: 2px;
+	float: right;
+	margin-bottom: 150px;
+  background-color: #CF102D;
+}
+
+
+.content3 h1{
+	font-family: monospace;
+	font-size: 40px;
+	border-bottom: 3px solid orange;
+	width: 42%;
+
+}
+
+.paracont{
+   color: white;
+}
+.parahead{
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.parahead2{
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  width: 80px;
+}
